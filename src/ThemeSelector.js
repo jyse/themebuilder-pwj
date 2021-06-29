@@ -43,7 +43,6 @@ export default (props) => {
   const { setMode } = useTheme();
 
   const themeSwitcher = (selectedTheme) => {
-    console.log(selectedTheme);
     setMode(selectedTheme);
     props.setter(selectedTheme);
   };
@@ -62,6 +61,7 @@ export default (props) => {
     setData(updated);
   };
 
+  
   const ThemeCard = (props) => {
     return (
       <Wrapper
